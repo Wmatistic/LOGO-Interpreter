@@ -1,0 +1,27 @@
+to sierpinski :size :depth
+    if :depth == 0 [
+        rp 3 [ fd :size lt 120 ]
+    ] else [
+        make "half :size / 2
+
+        sierpinski :half :depth - 1
+
+        fd :half
+        sierpinski :half :depth - 1
+
+        lt 120
+        fd :half
+        rt 120
+        sierpinski :half :depth - 1
+        lt 120
+        bk :half
+        rt 120
+
+        bk :half
+    ]
+end
+
+pu rt 90 fd 280 lt 90 bk 130 pd
+
+sc 2
+sierpinski 280 4

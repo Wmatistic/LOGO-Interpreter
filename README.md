@@ -83,16 +83,11 @@ java -cp $CP Driver 900 < samples/sample8_sierpinski.logo > out.svg
 
 | File | Description |
 |------|-------------|
-| `sample1_variables.logo` | Variables and arithmetic |
-| `sample2_conditionals.logo` | `if` / `else` |
-| `sample3_while.logo` | `while` loop spiral |
-| `sample4_procedures.logo` | Named procedures with parameters |
-| `sample5_combined.logo` | All basic features together |
-| `sample6_recursive_tree.logo` | Recursive binary tree with variable stroke width |
-| `sample7_koch_snowflake.logo` | Koch snowflake fractal (depth 3) |
-| `sample8_sierpinski.logo` | Sierpinski triangle fractal (depth 4) |
-| `sample9_new_commands.logo` | RGB color, stroke width, absolute positioning |
-| `sample10_fill.logo` | Filled shapes with `bf` / `ef` |
+| `basics.logo` | Core drawing commands |
+| `variables_and_control.logo` | Variables, arithmetic, while loops, and if/else conditonals |
+| `procedures.logo` | Procedures with parameters |
+| `koch_snowflake.logo` | Koch snowflake fractal (depth 3) | 
+| `sierpinski_triangle.logo` | Sierpinski triangle fractal (depth 4) |
 
 ## Architecture
 

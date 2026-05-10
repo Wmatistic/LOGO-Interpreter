@@ -1,0 +1,13 @@
+make "dist 200
+make "angle 91
+
+while :dist > 5 [
+    if :dist > 100 [
+        sc 1
+    ] else [
+        sc 3
+    ]
+    fd :dist
+    rt :angle
+    make "dist :dist - 5
+]

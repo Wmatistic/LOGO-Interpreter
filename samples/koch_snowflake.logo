@@ -1,0 +1,20 @@
+to koch :size :depth
+    if :depth == 0 [
+        fd :size
+    ] else [
+        koch :size / 3 :depth - 1
+        lt 60
+        koch :size / 3 :depth - 1
+        rt 120
+        koch :size / 3 :depth - 1
+        lt 60
+        koch :size / 3 :depth - 1
+    ]
+end
+
+pu bk 150 lt 90 fd 100 rt 90 pd
+
+rp 3 [
+    koch 300 3
+    rt 120
+]

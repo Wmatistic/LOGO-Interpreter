@@ -1,0 +1,24 @@
+to square :size
+    rp 4 [ fd :size rt 90 ]
+end
+
+to triangle :size
+    rp 3 [ fd :size lt 120 ]
+end
+
+to flower :size :petals
+    make "i 0
+    while :i < :petals [
+        square :size
+        rt 360 / :petals
+        make "i :i + 1
+    ]
+end
+
+sc 2
+flower 80 6
+
+pu rt 90 fd 250 lt 90 pd
+
+sc 4
+flower 60 8
